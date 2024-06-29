@@ -11,8 +11,8 @@ package CapaNegocios;
 public class Cliente extends Usuario {
     private final int idCliente;
 
-    public Cliente(int numDocIdentidad, String nombreUsuario, int telefono, String direccionDomicilio, int idCliente) {
-        super(numDocIdentidad, nombreUsuario, telefono, direccionDomicilio);
+    public Cliente(int idCliente, int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, int telefono, String direccionDomicilio) {
+        super(numDocIdentidad, tipoDocIdentidad, nombreUsuario, telefono, direccionDomicilio);
         this.idCliente = idCliente;
     }
     
