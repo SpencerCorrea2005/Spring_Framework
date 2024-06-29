@@ -23,8 +23,8 @@ public class TipoDocIdentidad {
         return nombreTipoDoc;
     }
     
-    public void IdentificarUsuario(nombreTipoDoc) {
+    public void IdentificarUsuario(String nombreTipoDoc) {
         System.out.println("Su tipo de documento de identidad es: " + nombreTipoDoc);
     }
-    
+ 
 }
