@@ -16,6 +16,7 @@ public class Usuario {
     
     //Atributos
     protected int numDocIdentidad;
+    protected String tipoDocIdentidad;
     protected String nombreUsuario;
     protected int telefono;
     protected String direccionDomicilio;
@@ -23,9 +24,10 @@ public class Usuario {
     //Métodos
     
     //Método constructor
-    
-    public Usuario(int numDocIdentidad, String nombreUsuario, int telefono, String direccionDomicilio) {
+
+    public Usuario(int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, int telefono, String direccionDomicilio) {
         this.numDocIdentidad = numDocIdentidad;
+        this.tipoDocIdentidad = tipoDocIdentidad;
         this.nombreUsuario = nombreUsuario;
         this.telefono = telefono;
         this.direccionDomicilio = direccionDomicilio;
@@ -39,6 +41,14 @@ public class Usuario {
 
     public int getNumDocIdentidad() {
         return numDocIdentidad;
+    }
+
+    public void setTipoDocIdentidad(String tipoDocIdentidad) {
+        this.tipoDocIdentidad = tipoDocIdentidad;
+    }
+
+    public String getTipoDocIdentidad() {
+        return tipoDocIdentidad;
     }
     
     public void setNombreUsuario(String nombreUsuario) {
