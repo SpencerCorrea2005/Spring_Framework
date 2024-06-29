@@ -72,7 +72,7 @@ public class Usuario {
     }
     
     public void registrarse() {
-        System.out.println("A continuación, te vas a registrar en la página web de la cafetería.");
+        System.out.println("A continuación, te vas a registrar en la página web de la cafetería");
     }
     
 }
