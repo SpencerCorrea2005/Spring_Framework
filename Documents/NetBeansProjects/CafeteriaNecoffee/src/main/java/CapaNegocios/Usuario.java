@@ -68,7 +68,7 @@ public class Usuario {
     //Otros métodos
     
     public void ingresarPagina() {
-        System.out.println("Bienvenido a la página" + getNombreUsuario());
+        System.out.println("Bienvenido a la página" + nombreUsuario);
     }
     
     public void registrarse() {
