@@ -14,15 +14,17 @@ public class Factura {
     private int cantidadPagada;
     private int devuelta;
     private String domicilioEmpresa;
+    private String fechaFacturacion;
     
     //Método constructor
 
-    public Factura(int ID_Factura, int totalProductos, int cantidadPagada, int devuelta, String domicilioEmpresa) {
+    public Factura(int ID_Factura, int totalProductos, int cantidadPagada, int devuelta, String domicilioEmpresa, String fechaFacturacion) {
         this.ID_Factura = ID_Factura;
         this.totalProductos = totalProductos;
         this.cantidadPagada = cantidadPagada;
         this.devuelta = devuelta;
         this.domicilioEmpresa = domicilioEmpresa;
+        this.fechaFacturacion = fechaFacturacion;
     }
     
     //Métodos set y get
@@ -67,6 +69,15 @@ public class Factura {
         this.domicilioEmpresa = domicilioEmpresa;
     }
     
+    public String getFechaFacturacion() {
+        return fechaFacturacion;
+    }
+
+    public void setFechaFacturacion(String fechaFacturacion) {
+        this.fechaFacturacion = fechaFacturacion;
+    }
+    
+    
     //Métodos adicionales
     
     public void emitirFactura() {
@@ -90,4 +101,5 @@ public class Factura {
     public void registropagoRealizado() {
         System.out.println("Se ha registrado el pago realizado con éxito dentro del sistema");
     }
+
 }
