@@ -9,12 +9,22 @@ package CapaNegocios;
  * @author USUARIO PC
  */
 public class AutenticacionUsuario {
+    protected int codigoAutenticacion;
     protected String correoElectronico;
     protected String contraseña;
 
-    public AutenticacionUsuario(String correoElectronico, String contraseña) {
+    public AutenticacionUsuario(int codigoAutenticacion, String correoElectronico, String contraseña) {
+        this.codigoAutenticacion = codigoAutenticacion;
         this.correoElectronico = correoElectronico;
         this.contraseña = contraseña;
+    }
+    
+    public void setCodigoAutenticacion(int codigoAutenticacion) {
+        this.codigoAutenticacion = codigoAutenticacion;
+    }
+    
+    public int getCodigoAutenticacion() {
+        return codigoAutenticacion;
     }
     
     public void setCorreoElectronico(String correoElectronico) {
