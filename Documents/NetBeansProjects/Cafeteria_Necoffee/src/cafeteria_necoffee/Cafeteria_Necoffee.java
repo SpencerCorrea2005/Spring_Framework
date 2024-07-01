@@ -38,6 +38,8 @@ public class Cafeteria_Necoffee {
             //statement.executeUpdate("INSERT INTO Usuario(NumDocumentoID, NombreUsuario, ApellidosUsuario, TipoDocumentoID, Telefono) VALUES ('1578963024', 'Andres Felipe', 'Osorio Barbosa', 'Cédula de Ciudadanía', '3204893510')");
             //statement.executeUpdate("UPDATE Usuario SET TipoDocumentoID = 'Cedula de Ciudadania'");
             //statement.executeUpdate("DELETE FROM Usuario WHERE NombreUsuario='Samuel'");
+            
+            //Los comentarios representan las funcionalidades de la base de datos (INSERT, SELECT, UPDATE, DELETE)
 
             rs = statement.executeQuery("SELECT * FROM usuario");
             rs.next();
