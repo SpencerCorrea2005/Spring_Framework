@@ -8,13 +8,49 @@ package cafeteria_necoffee;
  *
  * @author USUARIO PC
  */
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 public class Cafeteria_Necoffee {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola a todos");
+        
+        String usuario = "root";
+        String password = "";
+        String url = "jdbc:mysql://localhost:3307/cafeteria_database";
+        Connection conexion;
+        Statement statement;
+        ResultSet rs;
+        
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Cafeteria_Necoffee.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        try {
+            conexion = DriverManager.getConnection(url, usuario, password);
+            statement = conexion.createStatement();
+            
+            //statement.executeUpdate("INSERT INTO Usuario(NumDocumentoID, NombreUsuario, ApellidosUsuario, TipoDocumentoID, Telefono) VALUES ('1578963024', 'Andres Felipe', 'Osorio Barbosa', 'Cédula de Ciudadanía', '3204893510')");
+            
+            rs = statement.executeQuery("SELECT * FROM usuario");
+            rs.next();
+            
+            System.out.println("NumDocumentoID" + " | " + "NombreUsuario" + " | " + "ApellidosUsuario" + " | " + "TipoDocumentoID" + " | " + "Telefono");
+            do {
+                System.out.println(rs.getInt("NumDocumentoID") + " | " + rs.getString("NombreUsuario")); 
+                
+                //+ " | " + rs.getString("ApellidosUsuario") + " | " + rs.getString("TipoDocumentoID") + rs.getInt("Telefono"));
+            } while(rs.next());
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(Cafeteria_Necoffee.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
     
 }
