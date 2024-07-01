@@ -3,9 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/*
-* Nombre del paquete (Capa de Negocios del sistema)
-*/
 package CapaNegocios;
 
 /**
