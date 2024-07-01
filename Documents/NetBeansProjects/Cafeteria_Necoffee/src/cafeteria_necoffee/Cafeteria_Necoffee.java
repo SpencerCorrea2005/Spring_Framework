@@ -35,9 +35,13 @@ public class Cafeteria_Necoffee {
             conexion = DriverManager.getConnection(url, usuario, password);
             statement = conexion.createStatement();
             
-            //statement.executeUpdate("INSERT INTO Usuario(NumDocumentoID, NombreUsuario, ApellidosUsuario, TipoDocumentoID, Telefono) VALUES ('1578963024', 'Andres Felipe', 'Osorio Barbosa', 'Cédula de Ciudadanía', '3204893510')");
-            //statement.executeUpdate("UPDATE Usuario SET TipoDocumentoID = 'Cedula de Ciudadania'");
-            //statement.executeUpdate("DELETE FROM Usuario WHERE NombreUsuario='Samuel'");
+            statement.executeUpdate("INSERT INTO Usuario(NumDocumentoID, NombreUsuario, ApellidosUsuario, TipoDocumentoID, Telefono) VALUES ('5789012', 'Miguel', 'Suarez', 'Cedula de Ciudadania', '3197894025')");
+            statement.executeUpdate("INSERT INTO Usuario(NumDocumentoID, NombreUsuario, ApellidosUsuario, TipoDocumentoID, Telefono) VALUES ('1458987102', 'Mariana', 'Gonzalez Garcia', 'Tarjeta de Identidad', '3210257896')");
+            statement.executeUpdate("INSERT INTO Usuario(NumDocumentoID, NombreUsuario, ApellidosUsuario, TipoDocumentoID, Telefono) VALUES ('2002003004', 'Jaime', 'Martinez Mendoza', 'Cedula de Ciudadania', '6023541026')");
+            statement.executeUpdate("INSERT INTO Usuario(NumDocumentoID, NombreUsuario, ApellidosUsuario, TipoDocumentoID, Telefono) VALUES ('1002005145', 'Ruben Dario', 'Nunez Rodriguez', 'Cedula de Ciudadania', '3204530201')");
+
+            statement.executeUpdate("UPDATE Usuario SET TipoDocumentoID = 'Cedula de Ciudadania'");
+            statement.executeUpdate("DELETE FROM Usuario WHERE NombreUsuario='Mariana'");
             
             //Los comentarios representan las funcionalidades de la base de datos (INSERT, SELECT, UPDATE, DELETE)
 
