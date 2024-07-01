@@ -42,7 +42,7 @@ public class Cafeteria_Necoffee {
             rs = statement.executeQuery("SELECT * FROM usuario");
             rs.next();
             
-            
+            System.out.println("A continuacion, se presenta a traves de un array el registro de la tabla usuario:");
             System.out.println("NumDocumentoID" + " | " + "NombreUsuario" + " | " + "ApellidosUsuario" + " | " + "TipoDocumentoID" + " | " + "Telefono");
             do {
                 System.out.println(rs.getInt("NumDocumentoID") + " | " + rs.getString("NombreUsuario") + " | " + rs.getString("ApellidosUsuario") + " | " + rs.getString("TipoDocumentoID") + " | " + rs.getString("Telefono"));
