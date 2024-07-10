@@ -11,8 +11,8 @@ package cafeteria_necoffee;
 public class Administrador extends Usuario {
     private final int idAdministrador;
 
-    public Administrador(int idAdministrador, int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, int telefono, String direccionDomicilio) {
-        super(numDocIdentidad, tipoDocIdentidad, nombreUsuario, telefono, direccionDomicilio);
+    public Administrador(int idAdministrador, int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, int telefono, String direccionDomicilio) {
+        super(numDocIdentidad, tipoDocIdentidad, nombreUsuario, apellidoUsuario, telefono, direccionDomicilio);
         this.idAdministrador = idAdministrador;
     }
     
