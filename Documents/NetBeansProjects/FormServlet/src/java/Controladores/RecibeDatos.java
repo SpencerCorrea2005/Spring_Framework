@@ -34,18 +34,7 @@ public class RecibeDatos extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        String user = request.getParameter("Usuario");
-        String password = request.getParameter("Clave");
-        
-            if("admin".equals(user) && "1234".equals(password)) {
-                
-                processRequest(request, response, "Registro exitoso");
-            } else {
-                
-                processRequest(request, response, "Registro invalido");
-            }
-
+   
     }
 
     /**
@@ -59,7 +48,38 @@ public class RecibeDatos extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
+        
+        String nombre_usuario = request.getParameter("nombre_usuario");
+        String apellidos_usuario = request.getParameter("apellidos_usuario");
+        String tipo_docID = request.getParameter("tipo_documento");
+        String num_docID = request.getParameter("num_documento");
+        String telefono = request.getParameter("telefono");
+        String correo = request.getParameter("correo");
+        String contrasena = request.getParameter("contrasena");
+        String domicilio = request.getParameter("domicilio");
+        
+        System.out.println("El nombre del usuario es: " + nombre_usuario);
+        System.out.println("Los apellidos del usuario son: " + apellidos_usuario);
+        System.out.println("El tipo de documento de identidad es: " + tipo_docID);
+        System.out.println("El numero de documento de identidad es: " + num_docID);
+        System.out.println("El telefono es: " + telefono);
+        System.out.println("El correo es: " + correo);
+        System.out.println("La contrasena es: " + contrasena);
+        System.out.println("La direccion de domicilio es: " + domicilio);
+        
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet RecibeDatos</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Los datos han sido registrados correctamente </h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
+               
     }
 
     /**
@@ -73,17 +93,3 @@ public class RecibeDatos extends HttpServlet {
     }// </editor-fold>
 
 }
-
-/*response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            /*out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet RecibeDatos</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet RecibeDatos at " + msg + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }*/
