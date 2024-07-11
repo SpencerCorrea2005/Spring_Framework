@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,14 +84,13 @@
         </style>
         
     </head>
+    
     <body>
         <header>
-        <div class="contenedor">
-        </div>
         <h1> ¡Regístrate en la cafetería para poder iniciar a realizar tus compras! </h1>
         <h2> "Una vez rellenes los datos que te sean solicitados, tendrás acceso a todo el catálogo de productos disponibles en la cafetería" </h2>
         <h3> Digita los datos que te sean solicitados a continuación.</h3>
-    </header>
+        </header>
         
     <br> 
     <hr>
@@ -99,11 +98,6 @@
     
     <br>
     <br>
-    
-    
-        <div class="form">
-            <form name="Registro" action="RecibeDatos" autocomplete="on" target="_self" method="POST">
-            
             <br><br>
         <span> <label for="nombre_usuario">Nombres:</label> <br> </span>
         <span> <input type="text" id="nombre_usuario" name="nombre_usuario" required> </span> <br> <br>
@@ -131,8 +125,7 @@
             <br>
         
             <button type="submit"> Enviar </button>
-            
-        </form>
-        </div>
+             
     </body>
+</html>
 
