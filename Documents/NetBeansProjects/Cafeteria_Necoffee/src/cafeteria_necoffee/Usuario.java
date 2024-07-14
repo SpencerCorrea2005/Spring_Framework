@@ -16,7 +16,7 @@ public class Usuario {
     protected String nombreUsuario;
     protected String apellidoUsuario;
     protected int telefono;
-    protected String direccionDomicilio;
+    
     
     //Métodos
     
@@ -28,7 +28,6 @@ public class Usuario {
         this.nombreUsuario = nombreUsuario;
         this.apellidoUsuario = apellidoUsuario;
         this.telefono = telefono;
-        this.direccionDomicilio = direccionDomicilio;
     }
 
     
@@ -75,14 +74,6 @@ public class Usuario {
 
     public int getTelefono() {
         return telefono;
-    }
-    
-    public void setDireccionDomicilio(String direccionDomicilio) {
-        this.direccionDomicilio = direccionDomicilio;
-    }
-
-    public String getDireccionDomicilio() {
-        return direccionDomicilio;
     }
     
     //Otros métodos
