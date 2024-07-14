@@ -22,14 +22,13 @@ public class Usuario {
     
     //Método constructor
 
-    public Usuario(int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, int telefono, String direccionDomicilio) {
+    public Usuario(int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, int telefono) {
         this.numDocIdentidad = numDocIdentidad;
         this.tipoDocIdentidad = tipoDocIdentidad;
         this.nombreUsuario = nombreUsuario;
         this.apellidoUsuario = apellidoUsuario;
         this.telefono = telefono;
     }
-
     
     
     //Métodos Setters y Getters
