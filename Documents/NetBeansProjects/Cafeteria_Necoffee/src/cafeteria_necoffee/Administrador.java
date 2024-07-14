@@ -11,10 +11,12 @@ package cafeteria_necoffee;
 public class Administrador extends Usuario {
     private final int idAdministrador;
 
-    public Administrador(int idAdministrador, int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, int telefono, String direccionDomicilio) {
-        super(numDocIdentidad, tipoDocIdentidad, nombreUsuario, apellidoUsuario, telefono, direccionDomicilio);
+    public Administrador(int idAdministrador, int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, int telefono) {
+        super(numDocIdentidad, tipoDocIdentidad, nombreUsuario, apellidoUsuario, telefono);
         this.idAdministrador = idAdministrador;
     }
+
+    
     
     public void consultarHistorial(){
         System.out.println("Su código de administrador del sistema es: " + idAdministrador +
