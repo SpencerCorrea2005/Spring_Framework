@@ -15,14 +15,14 @@ public class Usuario {
     protected String tipoDocIdentidad;
     protected String nombreUsuario;
     protected String apellidoUsuario;
-    protected int telefono;
+    protected String telefono;
     
     
     //Métodos
     
     //Método constructor
 
-    public Usuario(int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, int telefono) {
+    public Usuario(int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, String telefono) {
         this.numDocIdentidad = numDocIdentidad;
         this.tipoDocIdentidad = tipoDocIdentidad;
         this.nombreUsuario = nombreUsuario;
@@ -64,16 +64,14 @@ public class Usuario {
     public String getApellidoUsuario() {
         return apellidoUsuario;
     }
-    
-    
-    
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }  
     
     //Otros métodos
     
