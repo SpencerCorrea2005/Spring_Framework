@@ -8,7 +8,6 @@ import com.mycoffeeshop.spring.hello_spring.TablaUsuario;
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.springframework.lang.Nullable;
 
 /**
  *
