@@ -5,6 +5,7 @@
 package com.mycoffeeshop.spring.dao.impl;
 
 import com.mycoffeeshop.spring.dao.api.TablaUsuarioDaoAPI;
+import com.mycoffeeshop.spring.dao.mapper.TablaUsuarioMapper;
 import com.mycoffeeshop.spring.hello_spring.TablaUsuario;
 import java.sql.Types;
 
@@ -61,13 +62,9 @@ public class TablaUsuarioDaoImpl implements TablaUsuarioDaoAPI {
 
     @Override
     public List<TablaUsuario> getTablaUsuario() {
-       
        StringBuilder sql = new StringBuilder(100);
        sql.append("SELECT * FROM usuario");
-       
-//     jdbcTemplate.query(sql, rowMapper)
-       
-       return null;
+       return jdbcTemplate.query(sql.toString(), new TablaUsuarioMapper());
     }
     
 }
