@@ -61,6 +61,12 @@ public class TablaUsuarioDaoImpl implements TablaUsuarioDaoAPI {
 
     @Override
     public List<TablaUsuario> getTablaUsuario() {
+       
+       StringBuilder sql = new StringBuilder(100);
+       sql.append("SELECT * FROM usuario");
+       
+//     jdbcTemplate.query(sql, rowMapper)
+       
        return null;
     }
     
