@@ -11,10 +11,10 @@ package cafeteria_necoffee;
 public class Cliente extends Usuario {
     private final int idCliente;
 
-    public Cliente(int idCliente, int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, int telefono) {
+    public Cliente(int idCliente, int numDocIdentidad, String tipoDocIdentidad, String nombreUsuario, String apellidoUsuario, String telefono) {
         super(numDocIdentidad, tipoDocIdentidad, nombreUsuario, apellidoUsuario, telefono);
         this.idCliente = idCliente;
-    }   
+    }  
     
     public void conocerProductos(){
         System.out.println("Señor cliente con ID: " + idCliente + ". "
